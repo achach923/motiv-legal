@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support — Motiv</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --forest-900:#0B2818;
+    --accent:#22C55E;
+    --accent-dim:rgba(34,197,94,0.10);
+    --ink:#14231A;
+    --muted:#5C6F64;
+    --hairline:#E4EAE6;
+    --page-bg:#F7F9F7;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; font-family:'Poppins',sans-serif; background:var(--page-bg); color:var(--ink);
+    line-height:1.65;
+  }
+  header{
+    background:var(--forest-900); padding:36px 20px 32px; text-align:center;
+  }
+  header .logo{ color:#fff; font-weight:800; font-size:22px; letter-spacing:-0.01em; }
+  header .logo span{ color:var(--accent); }
+  header .tag{ color:rgba(255,255,255,0.55); font-size:13px; font-weight:500; margin-top:6px; }
+  main{ max-width:680px; margin:0 auto; padding:32px 22px 80px; }
+  h1{ font-size:24px; font-weight:800; margin:0 0 8px; }
+  .lead{ font-size:14.5px; color:#33403A; margin-bottom:28px; }
+
+  .contact-card{
+    background:var(--forest-900); border-radius:18px; padding:24px; margin-bottom:28px;
+    display:flex; align-items:center; gap:16px; position:relative; overflow:hidden;
+  }
+  .contact-card::before{
+    content:''; position:absolute; width:180px; height:180px; border-radius:50%;
+    border:1px solid rgba(255,255,255,0.06); top:-100px; right:-60px;
+  }
+  .contact-card .icon{
+    width:48px; height:48px; border-radius:50%; background:var(--accent-dim);
+    border:1.5px solid var(--accent); display:flex; align-items:center; justify-content:center;
+    color:var(--accent); font-size:20px; flex-shrink:0; position:relative; z-index:1;
+  }
+  .contact-card .txt{ position:relative; z-index:1; }
+  .contact-card .label{ color:rgba(255,255,255,0.55); font-size:12px; font-weight:700; letter-spacing:0.05em; }
+  .contact-card a{ color:#fff; font-size:17px; font-weight:700; text-decoration:none; }
+  .contact-card .sub{ color:rgba(255,255,255,0.6); font-size:12.5px; margin-top:2px; }
+
+  h2{ font-size:16px; font-weight:700; margin:32px 0 14px; color:var(--forest-900); }
+
+  .faq{
+    background:#fff; border:1px solid var(--hairline); border-radius:14px; padding:16px 18px; margin-bottom:10px;
+  }
+  .faq .q{ font-weight:700; font-size:14.5px; margin-bottom:6px; }
+  .faq .a{ font-size:13.5px; color:var(--muted); }
+
+  a.link{ color:var(--forest-900); font-weight:600; text-decoration-color:var(--accent); }
+  footer{ text-align:center; padding:24px; color:var(--muted); font-size:12px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">motiv<span>.</span></div>
+  <div class="tag">Centre d'aide</div>
+</header>
+
+<main>
+  <h1>Comment pouvons-nous vous aider ?</h1>
+  <p class="lead">Une question, un bug, un signalement ? Notre équipe répond sous 48 heures ouvrées.</p>
+
+  <div class="contact-card">
+    <div class="icon">✉</div>
+    <div class="txt">
+      <div class="label">CONTACTEZ-NOUS</div>
+      <a href="mailto:leininger.mathys@motiv-app.fr">leininger.mathys@motiv-app.fr</a>
+      <div class="sub">Réponse sous 48h ouvrées</div>
+    </div>
+  </div>
+
+  <h2>Questions fréquentes</h2>
+
+  <div class="faq">
+    <div class="q">Comment supprimer mon compte ?</div>
+    <div class="a">Réglages → Compte → Supprimer mon compte. La suppression est définitive et vos données sont effacées sous 30 jours.</div>
+  </div>
+
+  <div class="faq">
+    <div class="q">Comment signaler un utilisateur ou un contenu ?</div>
+    <div class="a">Depuis le profil ou la sortie concernée, appuyez sur les trois points en haut à droite puis « Signaler ». Notre équipe traite chaque signalement sous 48h.</div>
+  </div>
+
+  <div class="faq">
+    <div class="q">J'ai un problème technique avec l'application</div>
+    <div class="a">Écrivez-nous à leininger.mathys@motiv-app.fr en précisant votre modèle d'appareil, la version de l'app et une description du problème rencontré.</div>
+  </div>
+
+  <div class="faq">
+    <div class="q">Comment fonctionne le niveau par sport ?</div>
+    <div class="a">Votre niveau (Débutant à Expert) est calculé à partir de votre expérience déclarée et de vos performances pour chaque sport pratiqué. Il permet de vous proposer des sorties adaptées.</div>
+  </div>
+
+  <p style="margin-top:32px; font-size:13.5px; color:var(--muted);">
+    Retrouvez également notre <a class="link" href="./privacy.html">politique de confidentialité</a>.
+  </p>
+</main>
+
+<footer>© 2026 Motiv. Tous droits réservés.</footer>
+
+</body>
+</html>
